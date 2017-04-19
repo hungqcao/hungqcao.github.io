@@ -125,6 +125,8 @@ Example result
 
 Happy coding!
 
+Hung Cao
+
 [add-dashboard-url]: https://www.visualstudio.com/en-us/docs/integrate/extensions/develop/add-dashboard-widget
 [use-tree-view-url]:   https://www.visualstudio.com/en-us/docs/integrate/extensions/develop/ui-controls/treeviewo
 [analytics-url]: https://www.visualstudio.com/en-us/docs/report/analytics/analytics-recipes
