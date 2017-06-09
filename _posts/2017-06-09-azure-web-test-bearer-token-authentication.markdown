@@ -36,3 +36,6 @@ request2.Headers.Add(new WebTestRequestHeader("Authorization", ("Bearer " + toke
 Happy coding!
 
 Hung Cao
+
+[page-1]: https://docs.microsoft.com/en-us/azure/application-insights/app-insights-monitor-web-app-availability#dealing-with-sign-in
+[page-2]: https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-code#use-the-authorization-code-to-request-an-access-token
