@@ -9,7 +9,7 @@ Hello, if you guys are trying to use Azure Webtest to maintain the availability 
 * An application in AAD, go to Configure section of your app and you will have (**CLIENT ID**, **CLIENT SECRET (KEY)**)
 * Go to Visual Studio and create new WebTest project. Let's set up everything like this. 
 
-![Screenshot1]({{ site.url }}/assets/687474703a2f2f692e696d6775722e636f6d2f6a6934303233302e706e67.PNG)
+![Screenshot1]({{ site.url }}/assets/687474703a2f2f692e696d6775722e636f6d2f6a6934303233302e706e67.png)
 
 **Block 1**: your tenant id or tenant uri
 
@@ -23,7 +23,7 @@ Hello, if you guys are trying to use Azure Webtest to maintain the availability 
 
 Ok, so let's talk about block 2. This value really depends on how your server sets up. Here, I will use .net core as an example. Here is how I set up my app.
 
-![Screenshot2]({{ site.url }}/assets/687474703a2f2f692e696d6775722e636f6d2f4f7163346270352e706e67.PNG)
+![Screenshot2]({{ site.url }}/assets/687474703a2f2f692e696d6775722e636f6d2f4f7163346270352e706e67.png)
 
 My server expects client to send bearer token if user is authenticated. **Configuration["AzureAd:Audience"]** is my **client Id**. Here is the tricky part: The value of **Block 2** needs to be matched with **Audience value** inside **UseJwtBearerAuthentication**. It means if I am using client Id here then my block 2 value should be client Id as well. That's the most tricky part. Now if you look at the first image, after the first request you will get **AuthorizationHeader** and it contains the access token. So the next step is extract it and send it with the second request. Unfortunately, you will need to modify the code a little bit. Let's generate code from our Webtest. **this.Context["AuthorizationHeader"]** is a JSON object. This code will extract access token.
 
