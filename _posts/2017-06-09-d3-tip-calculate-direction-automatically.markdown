@@ -2,7 +2,7 @@
 layout: post
 title:  "Making D3 tip to calculate its direction automatically"
 date:   2017-06-09 23:03:26 -0700
-categories: vso-dashboard, d3, d3-tip
+categories: vso-dashboard d3 d3-tip
 ---
 I was working on a small VSO gantt chart tile project with D3 and we needed to add tooltips for each bar. The problem came up when we need to display the tooltips in different directions depending on the position of the hovering bar as well as the container (VSO tiles in my example). Here is the solution for it:
 First of all, there was a little bug (IMO) of d3tip itself that the classname of the tooltip didn't get reset. For example, once it has "n" class, it always is "n". If you change it to "w", it will append "w" to current classname. The fix is simple, open the d3 tip source code and look at tip.show function. 
