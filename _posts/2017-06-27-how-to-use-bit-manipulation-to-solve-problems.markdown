@@ -81,7 +81,7 @@ Given an array containing n distinct numbers taken from 0, 1, 2, ..., n, find th
 	}
 {% endhighlight %}
 
-**| tricks**
+**`|`{:.language-javascript} tricks**
 
 Keep as many 1-bits as possible
 
@@ -125,7 +125,7 @@ Reverse bits of a given 32 bits unsigned integer.
 	}
 {% endhighlight %}
 
-**& tricks**
+**`&`{:.language-javascript} tricks**
 
 Just selecting certain bits
 
