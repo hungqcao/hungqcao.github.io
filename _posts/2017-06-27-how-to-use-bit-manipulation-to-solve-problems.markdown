@@ -14,7 +14,7 @@ Bit manipulation, in some cases, can obviate or reduce the need to loop over a d
 
 *Basics*
 
-At the heart of bit manipulation are the bit-wise operators & (and), | (or), ~ (not) and ^ (exclusive-or, xor) and shift operators a << b and a >> b.
+At the heart of bit manipulation are the bit-wise operators `&`{:.language-javascript} (and), `|`{:.language-javascript} (or), `~`{:.language-javascript} (not) and `^`{:.language-javascript} (exclusive-or, xor) and shift operators a `<<`{:.language-javascript} b and a `>>`{:.language-javascript} b.
 
 > There is no boolean operator counterpart to bitwise exclusive-or, but there is a simple explanation. The exclusive-or operation takes two inputs and returns a 1 if either one or the other of the inputs is a 1, but not if both > are. That is, if both inputs are 1 or both inputs are 0, it returns 0. Bitwise exclusive-or, with the operator of a caret, ^, performs the exclusive-or operation on each pair of bits. Exclusive-or is commonly abbreviated XOR.
 
