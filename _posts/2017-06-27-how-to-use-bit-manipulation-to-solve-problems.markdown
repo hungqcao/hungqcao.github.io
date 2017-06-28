@@ -18,13 +18,13 @@ At the heart of bit manipulation are the bit-wise operators `&`{:.language-javas
 
 > There is no boolean operator counterpart to bitwise exclusive-or, but there is a simple explanation. The exclusive-or operation takes two inputs and returns a 1 if either one or the other of the inputs is a 1, but not if both > are. That is, if both inputs are 1 or both inputs are 0, it returns 0. Bitwise exclusive-or, with the operator of a caret, ^, performs the exclusive-or operation on each pair of bits. Exclusive-or is commonly abbreviated XOR.
 
-* Set union A | B
-* Set intersection A & B
-* Set subtraction A & ~B
-* Set negation ALL_BITS ^ A or ~A
-* Set bit A |= 1 << bit
+* Set union A `|`{:.language-javascript} B
+* Set intersection A `&`{:.language-javascript} B
+* Set subtraction A `&`{:.language-javascript} ~B
+* Set negation ALL_BITS `^`{:.language-javascript} A or ~A
+* Set bit A `|=`{:.language-javascript} 1 << bit
 * Clear bit A &= ~(1 << bit)
-* Test bit (A & 1 << bit) != 0
+* Test bit (A `&`{:.language-javascript} 1 << bit) != 0
 * Extract last bit A&-A or A&~(A-1) or x^(x&(x-1))
 * Remove last bit A&(A-1)
 * Get all 1-bits ~0
@@ -52,13 +52,13 @@ Is power of four (actually map-checking, iterative and recursive methods can do 
 	}
 {% endhighlight %}
 
-**^ tricks**
+**`^`{:.language-javascript} tricks**
 
-Use ^ to remove even exactly same numbers and save the odd, or save the distinct bits and remove the same.
+Use `^`{:.language-javascript} to remove even exactly same numbers and save the odd, or save the distinct bits and remove the same.
 
 *Sum of Two Integers*
 
-Use ^ and & to add two integers
+Use `^`{:.language-javascript} and & to add two integers
 
 {% highlight Java %}
 	int getSum(int a, int b) {
@@ -187,9 +187,11 @@ Write a function that takes an unsigned integer and returns the number of ’1' 
 Repeated DNA Sequences
 
 All DNA is composed of a series of nucleotides abbreviated as A, C, G, and T, for example: "ACGAATTCCG". When studying DNA, it is sometimes useful to identify repeated sequences within the DNA. Write a function to find all the 10-letter-long sequences (substrings) that occur more than once in a DNA molecule.
+
 For example,
-Given s = "AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT",
-Return: ["AAAAACCCCC", "CCCCCAAAAA"].
+
+> Given s = "AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT",
+> Return: ["AAAAACCCCC", "CCCCCAAAAA"].
 
 Solution
 
@@ -313,7 +315,7 @@ Attention
 - result after shifting left(or right) too much is undefined
 - right shifting operations on negative values are undefined
 - right operand in shifting should be non-negative, otherwise the result is undefined
-- The & and | operators have lower precedence than comparison operators
+- The `&`{:.language-javascript} and `|`{:.language-javascript} operators have lower precedence than comparison operators
 
 **Sets**
 
