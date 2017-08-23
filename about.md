@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: Hung Cao
 permalink: /about/
 ---
 
