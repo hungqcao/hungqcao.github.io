@@ -23,12 +23,10 @@ Let's try out some easy examples: (From now on, every nums I write is in binary)
 Adding to binary numbers:
 
 {% highlight HTML %}
-{
-	0 + 1 = 1 (easy)
-	0 + 0 = 0 (easy)
-	1 + 0 = 1 (easy)
-	1 + 1 = 0 (this is interesting because you have additonal 1 value after addition, how do we address that?)
-}
+0 + 1 = 1 (easy)
+0 + 0 = 0 (easy)
+1 + 0 = 1 (easy)
+1 + 1 = 0 (this is interesting because you have additonal 1 value after addition, how do we address that?)
 {% endhighlight %}
 
 Let's not worry about the additional `1` for now. Based on above calculations we can have a truth table of sum operator
