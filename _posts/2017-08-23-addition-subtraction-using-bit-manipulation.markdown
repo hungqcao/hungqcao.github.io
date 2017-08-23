@@ -49,7 +49,21 @@ Let's look at above truth table again. If `x + y` is representation of `XOR` ope
 
 Cool, finally we can complete our formula: `x + y` equals `x^y + (x&y << 1)`. And we keep doing it until there is no carry over (meaning `x&y << 1 == 0`) then at that time `x^y` is the result we are looking for.
 
-**Subtraction (To be continued)**
+**Subtraction**
+
+Same idea can be applied here for subtraction, let's build a truth table for subtraction:
+
+{% highlight HTML %}
+x | y | x - y | borrow
+1 | 1 |   0   |   0
+1 | 0 |   1   |   0
+0 | 0 |   0   |   0
+0 | 1 |   1   |   1
+{% endhighlight %}
+
+So here you can notice `x - y` will be `x^y` and borrow will be `~x&y`.
+
+Same logic we will have `x - y = x^y - ~x&y<< 1`.
 
 Happy coding!
 
